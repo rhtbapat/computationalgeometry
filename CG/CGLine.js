@@ -6,8 +6,8 @@ var CGLine = (function () {
     var faces = [];
 
     function CGLine(x1,y1,z1,x2,y2,z2) {
-        point1 = new CGPoint(x1,y1,z1);
-        point2 = new CGPoint(x2,y2,z2);
+        this.point1 = new CGPoint(x1,y1,z1);
+        this.point2 = new CGPoint(x2,y2,z2);
     }
     
     CGLine.prototype.getFaces = function () {
