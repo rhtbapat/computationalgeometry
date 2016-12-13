@@ -10,4 +10,10 @@ crossProduct = function(vec1,vec2){
   return new CGVector(a,b,c);
 }
 
+angBetVectors = function(vec1,vec2){
+  var crMag = crossProduct(vec1,vec2).magnitude;
+  var dtMag = dotProduct(vec1,vec2);
+  return Math.atan2(crMag, dtMag);
+}
+
 
