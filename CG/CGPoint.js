@@ -9,9 +9,9 @@ var CGPoint = (function () {
 
     function CGPoint(x1,y1,z1) {
 
-        x = parseFloat(x1);
-        y = parseFloat(y1);
-        z = parseFloat(z1);
+        this.x = parseFloat(x1);
+        this.y = parseFloat(y1);
+        this.z = parseFloat(z1);
     }
 
     CGPoint.prototype.getEdges = function () {
