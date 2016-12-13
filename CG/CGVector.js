@@ -18,6 +18,10 @@ var CGVector = (function () {
     CGVector.prototype.getMagnitude = function () {
         return this.magnitude;
     }
+    
+    CGVector.prototype.getUnitVector = function () {
+        return this.unitVector;
+    }
 
     return CGVector;
 
